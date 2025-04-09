@@ -1,0 +1,169 @@
+﻿@charset "utf-8";
+
+/* 基本レイアウト ここから↓ */
+@import url(common.css);
+header {
+  width: 800px;
+  height: 70px;
+  margin: 20px auto 40px auto;
+  position: relative;
+}
+header h1 {
+  margin: 0;
+  position: absolute;
+}
+nav {
+  position: absolute;
+  right: 0;
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+nav ul li {
+  float: left;
+}
+
+/* ボタンの上にマウスカーソルが重なったら・・・ */
+nav ul li a:hover {
+  opacity: 0.6;
+}
+
+footer p {
+  color: #ffffff;
+  margin-bottom: 0;
+  /*
+		padding-top: 14px;
+		padding-right: 0;
+		padding-bottom: 14px;
+		padding-left: 0;
+	*/
+  padding: 10px 0 10px 0; /* 上 右 下 左の順 */
+  background-image: url(../images/bg_footer.png); /* 背景用画像の指定 */
+  background-repeat: repeat-x;
+  text-align: center;
+}
+
+.minn {
+  color: rgb(16, 187, 144);
+}
+footer small {
+  font-size: 50%;
+}
+* {
+  color: brown;
+}
+
+#main h1 {
+  background-image: url(../images/h1.png);
+  background-repeat: no-repeat;
+  background-position: 0 7px;
+  /*
+	padding-top: 8px;
+	padding-right: 0;
+	padding-bottom: 3px;
+	padding-left: 40px;
+	*/
+  padding: 8px 0 3px 25px;
+  /*
+	margin-top: 0;
+	margin-bottom: 20px;
+	*/
+  margin: 0 0 20px 0;
+  font-size: 1.6em;
+}
+.float_clear {
+  clear: both;
+}
+
+/* 基本レイアウト ここまで↑ */
+
+/* 「おすすめスイーツ」ページ ここから↓ */
+#recommend table {
+  width: 568px;
+  margin-bottom: 20px;
+
+  border-collapse: collapse;
+}
+
+#recommend caption {
+  text-align: left;
+}
+#recommend th,
+#recommend td {
+  border: 1px solid #7aa7a2;
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+  background-color: aliceblue;
+}
+#recommend th {
+  background-color: #cce8e4;
+}
+#recommend .name {
+  width: 70px;
+}
+#recommend .price {
+  width: 100px;
+}
+#recommend td.price {
+  text-align: right;
+}
+/* 「おすすめスイーツ」ページ ここまで↑ */
+
+/* 「店舗のご案内」ページ ここから↓ */
+#store img.float_right {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  float: right;
+}
+#store article ul {
+  list-style-type: circle;
+}
+#store p.memo {
+  font-size: x-small;
+  padding-left: 30px;
+}
+#store li {
+  font-size: larger;
+}
+
+li:nth-child(even) {
+  background-color: #d4f3ef;
+}
+
+li:nth-child(odd) {
+  background-color: rgb(216, 229, 240);
+}
+/* 「店舗のご案内」ページ ここまで↑ */
+
+/* 「ご感想・ご提案」ページ ここから↓ */
+#opinion form {
+  margin-top: 30px;
+}
+#opinion input.textfield,
+#opinion textarea {
+  border: 3px solid #009be2f8;
+}
+#opinion label {
+  color: white;
+  background-color: #009be2f8;
+}
+#opinion input {
+  font-size: 15pt;
+}
+#opinion input.textfield {
+  width: 250px;
+  font-size: x-large;
+}
+#opinion textarea {
+  width: 500px;
+  height: 170px;
+  overflow-y: scroll;
+}
+input:focus {
+  color: white;
+  background-color: royalblue;
+}
+
+/* 「ご感想・ご提案」ページ ここまで↑ */
